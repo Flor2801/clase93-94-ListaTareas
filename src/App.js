@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Tarea from './components/Tarea';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const App = () => {
   const [valorDelInput, setValorDelInput] = useState('');
@@ -18,6 +16,9 @@ const App = () => {
 
   const borrarElementoDelArray = (param) => {
     // aqui borramos un elemento del array
+    nuevaLista = [...lista]
+    
+    setLista()
     console.log("estoy en la funcion borrar elemento del array y el parametro que me mandaron es", param)
   }
 
